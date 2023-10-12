@@ -1,3 +1,66 @@
+$primary-color: white;
+$secondary-color: black;
+$tertiary-color: #ed6436;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+nav {
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 0 -2px 4px 0 $secondary-color;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+
+      a:hover {
+        color: $tertiary-color;
+        border-bottom: 2px solid $tertiary-color;
+      }
+    }
+  }
+  div {
+    padding: 1rem;
+
+    img {
+      height: 4rem;
+    }
+  }
+  .menu {
+    display: none;
+    img {
+      height: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  nav {
+    ul {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+  }
 }
