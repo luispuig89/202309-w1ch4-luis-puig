@@ -121,33 +121,6 @@ section {
   }
 }
 
-.img-container {
-  position: relative;
-  color: white;
-  text-align: center;
-}
-.img-h2,
-.img-p {
-  display: none;
-}
-.img-container:hover {
-  .img-h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .img-p {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-  }
-}
-
 @media all and (max-width: 480px) {
   nav {
     height: 4rem;
